@@ -3,8 +3,6 @@
 
 rm wp-config-sample.php
 
-history -c
-
 wp theme delete --all
 
 wp theme install https://github.com/ThomasTSWD/WPCLI/raw/main/Divi.zip --activate
@@ -16,10 +14,6 @@ wp plugin delete akismet hello
 wp plugin install https://github.com/ThomasTSWD/tswd-front-end/archive/refs/heads/main.zip simple-divi-shortcode wp-custom-body-class better-search-replace enable-media-replace disable-comments bulk-page-creator ewww-image-optimizer --activate
 
 wp plugin install really-simple-ssl cookie-law-info wordpress-seo google-analytics-for-wordpress wp-fastest-cache wow-carousel-for-divi-lite popups-for-divi contact-form-7 favicon-by-realfavicongenerator wp-pagenavi autoptimize wp-pagenavi
-
-wp plugin install woocommerce woocommerce-pdf-invoices-packing-slips --activate
-
-wp plugin install side-cart-woocommerce woocommerce-table-rate-shipping smntcs-woocommerce-quantity-buttons
 
 wp comment delete --force $(wp comment list --format=ids)
 
