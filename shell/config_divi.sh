@@ -1,46 +1,5 @@
 #!/bin/bash
 
-# Mise à jour de divi_postinfo2
-wp eval '
-$options = get_option("et_divi");
-if (is_array($options)) {
-    $postinfo2 = isset($options["divi_postinfo2"]) ? $options["divi_postinfo2"] : [];
-    $new_postinfo2 = [];
-
-    if (in_array("date", $postinfo2)) {
-        $new_postinfo2[] = "date";
-    }
-    if (in_array("categories", $postinfo2)) {
-        $new_postinfo2[] = "categories";
-    }
-
-    $options["divi_postinfo2"] = $new_postinfo2;
-    update_option("et_divi", $options);
-    echo "Options mises à jour avec succès pour divi_postinfo2.";
-} else {
-    echo "Erreur : options non valides.";
-}'
-
-# Mise à jour de divi_postinfo1
-wp eval '
-$options = get_option("et_divi");
-if (is_array($options)) {
-    $postinfo1 = isset($options["divi_postinfo1"]) ? $options["divi_postinfo1"] : [];
-    $new_postinfo1 = [];
-
-    if (in_array("date", $postinfo1)) {
-        $new_postinfo1[] = "date";
-    }
-    if (in_array("categories", $postinfo1)) {
-        $new_postinfo1[] = "categories";
-    }
-
-    $options["divi_postinfo1"] = $new_postinfo1;
-    update_option("et_divi", $options);
-    echo "Options mises à jour avec succès pour divi_postinfo1.";
-} else {
-    echo "Erreur : options non valides.";
-}'
 
 # Autres mises à jour
 wp eval '
