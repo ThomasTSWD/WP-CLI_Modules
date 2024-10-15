@@ -71,6 +71,10 @@ wp config set WP_AUTO_UPDATE_CORE false --raw
 
 wp media import https://github.com/ThomasTSWD/WPCLI/raw/main/images/placeholder.jpg
 
+wp media import https://github.com/ThomasTSWD/WPCLI/raw/main/images/envirabox_sprite.png --title="close" --alt="close"
+
+wp media import https://github.com/ThomasTSWD/WPCLI/raw/main/images/close.svg --title="close" --alt="close"
+
 echo "define('ALLOW_UNFILTERED_UPLOADS', true);" >> wp-config.php
 
 wp config set WP_MAX_MEMORY_LIMIT '512M' --type=constant
