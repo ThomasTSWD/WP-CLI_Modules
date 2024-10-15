@@ -69,7 +69,7 @@ wp config set AUTOMATIC_UPDATER_DISABLED true --raw
 
 wp config set WP_AUTO_UPDATE_CORE false --raw
 
-wp media import https://github.com/ThomasTSWD/WPCLI/raw/main/placeholder.jpg
+wp media import https://github.com/ThomasTSWD/WPCLI/raw/main/images/placeholder.jpg
 
 echo "define('ALLOW_UNFILTERED_UPLOADS', true);" >> wp-config.php
 
