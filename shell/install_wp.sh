@@ -7,7 +7,6 @@ wp core download --locale="fr_FR"
 read -p "Entrez l'hôte de la base de données (ex: localhost) : " dbhost
 read -p "Entrez le nom de la base de données : " dbname
 read -p "Entrez le nom d'utilisateur de la base de données : " dbuser
-read -sp "Entrez le prefixe de table souhaité : " dbpass
 read -sp "Entrez le mot de passe de la base de données : " dbpass
 echo # nouvelle ligne après la saisie du mot de passe
 read -p "Entrez la locale (ex: fr_FR) : " locale
