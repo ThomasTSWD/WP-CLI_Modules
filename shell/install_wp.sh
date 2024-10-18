@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Charger les alias de .bashrc
+source ~/.bashrc
+
+
 wp --version
 wp core download --locale="fr_FR"
 
