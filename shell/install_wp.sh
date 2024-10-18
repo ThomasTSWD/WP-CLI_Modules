@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Charger les alias de .bashrc
-source ~/.bashrc
 
 
 wp --version
