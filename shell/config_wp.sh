@@ -13,7 +13,7 @@ wp plugin delete akismet hello
 
 wp plugin install https://github.com/ThomasTSWD/tswd-front-end/archive/refs/heads/main.zip simple-divi-shortcode wp-custom-body-class better-search-replace enable-media-replace disable-comments bulk-page-creator ewww-image-optimizer dark-mode-for-wp-dashboard --activate
 
-wp plugin install really-simple-ssl complianz-gdpr wordpress-seo google-analytics-for-wordpress wp-fastest-cache wow-carousel-for-divi-lite popups-for-divi contact-form-7 favicon-by-realfavicongenerator wp-pagenavi autoptimize 
+wp plugin install really-simple-ssl complianz-gdpr wordpress-seo google-analytics-for-wordpress wp-fastest-cache wow-carousel-for-divi-lite popups-for-divi contact-form-7 favicon-by-realfavicongenerator wp-pagenavi autoptimize wp-mail-smtp
 
 wp comment delete --force $(wp comment list --format=ids)
 
