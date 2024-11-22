@@ -27,5 +27,4 @@ read -p "Entrez l'email de l'admin : " admin_email
 # wp install
 wp core install --url="$site_url" --title="$site_title" --admin_user="$admin_user" --admin_password="$admin_password" --admin_email="$admin_email"
 
-rm wp-config-sample.php
 history -c
